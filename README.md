@@ -13,4 +13,4 @@ Auteur :
 
 ## Diégèse
 > [!NOTE]
-> Non urgent mais de bonne sidées seraient la bienvenue !
+> Non urgent mais de bonnes idées seraient la bienvenue !
