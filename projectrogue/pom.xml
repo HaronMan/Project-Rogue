@@ -58,7 +58,7 @@
             <!-- Default configuration for running with: mvn clean javafx:run -->
             <id>default-cli</id>
             <configuration>
-              <mainClass>fr.haronman.projectrogue/fr.haronman.projectrogue.HelloApplication</mainClass>
+              <mainClass>fr.haronman.projectrogue/fr.haronman.projectrogue.view.Menu</mainClass>
               <launcher>app</launcher>
               <jlinkZipName>app</jlinkZipName>
               <jlinkImageName>app</jlinkImageName>

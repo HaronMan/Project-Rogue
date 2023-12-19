@@ -3,6 +3,6 @@ module fr.haronman.projectrogue {
     requires javafx.fxml;
 
 
-    opens fr.haronman.projectrogue to javafx.fxml;
-    exports fr.haronman.projectrogue;
+    opens fr.haronman.projectrogue.view to javafx.fxml;
+    exports fr.haronman.projectrogue.view;
 }
