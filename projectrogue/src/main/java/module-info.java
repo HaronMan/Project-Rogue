@@ -4,5 +4,6 @@ module fr.haronman.projectrogue {
 
 
     opens fr.haronman.projectrogue.view to javafx.fxml;
+    opens fr.haronman.projectrogue.controller to javafx.fxml;
     exports fr.haronman.projectrogue.view;
 }
