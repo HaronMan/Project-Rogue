@@ -22,4 +22,9 @@ public abstract class Item implements Comparable<Item> {
     public int compareTo(Item o) {
         return nom.compareTo(o.nom);
     }
+
+    @Override
+    public int hashCode() {
+        return (nom.length() * type.length()) + nom.hashCode();
+    }
 }

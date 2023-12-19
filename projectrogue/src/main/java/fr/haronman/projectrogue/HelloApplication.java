@@ -1,5 +1,6 @@
 package fr.haronman.projectrogue;
 
+import fr.haronman.projectrogue.model.Item.Arme.ArmeDeuxMains;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
