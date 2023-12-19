@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+   fx:controller="fr.haronman.projectrogue.controller.CPController">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: brown; -fx-alignment: center; -fx-border-style: solid; -fx-border-width: 5px; -fx-border-color: orange;">
+         <children>
+            <Label text="Creation Personnage" textFill="#ffba00">
+               <font>
+                  <Font name="Californian FB" size="40.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-alignment: center; -fx-spacing: 20;">
+               <children>
+                  <Label text="Nom :" textFill="WHITE">
+                     <font>
+                        <Font name="Californian FB" size="30.0" />
+                     </font>
+                  </Label>
+                  <TextField id="name" promptText="Entrez un nom">
+                     <font>
+                        <Font name="Californian FB" size="18.0" />
+                     </font>
+                  </TextField>
+                  <Button id="random" onAction="#genererNom" mnemonicParsing="false" text="Generer">
+                     <font>
+                        <Font name="Californian FB" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <Button id="end" onAction="#creerJeu" mnemonicParsing="false" text="Terminer">
+               <font>
+                  <Font name="Californian FB" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</Pane>

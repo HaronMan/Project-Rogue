@@ -13,9 +13,6 @@ public class Menu extends Application {
         FXMLLoader menu = new FXMLLoader(getClass().getResource("/fxml/menu.fxml"));
         Parent root = menu.load();
 
-        MenuController controller = menu.getController();
-        controller.setStage(stage);
-
         Scene scene = new Scene(root);
         stage.setTitle("Project Rogue");
         stage.setScene(scene);
