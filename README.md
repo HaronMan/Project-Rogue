@@ -8,8 +8,11 @@ Projet personnel :
 
 Langage : Java
 
-Auteur :
-- [HaronMan](https://github.com/HaronMan)
+### -----Equipe-----
+
+**Auteur** : [HaronMan](https://github.com/HaronMan)
+
+Collaborateur : [Guigui0159570](https://github.com/guigui0159570) (Déboggeur)
 
 ## Diégèse
 > [!NOTE]
