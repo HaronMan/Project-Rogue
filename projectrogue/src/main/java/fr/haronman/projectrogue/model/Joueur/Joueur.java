@@ -15,4 +15,20 @@ public class Joueur {
         inventaire = new Inventaire<Item>();
     }
 
+
+    public String getNom() {
+        return nom;
+    }
+
+    public double getPv_max() {
+        return pv_max;
+    }
+
+    public double getPv() {
+        return pv;
+    }
+
+    public Inventaire<Item> getInventaire() {
+        return inventaire;
+    }
 }
