@@ -7,42 +7,63 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
-   fx:controller="fr.haronman.projectrogue.controller.CPController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.haronman.projectrogue.controller.CPController">
    <children>
       <VBox prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: brown; -fx-alignment: center; -fx-border-style: solid; -fx-border-width: 5px; -fx-border-color: orange;">
          <children>
-            <Label text="Creation Personnage" textFill="#ffba00">
-               <font>
-                  <Font name="Californian FB" size="40.0" />
-               </font>
-            </Label>
-            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-alignment: center; -fx-spacing: 20;">
+            <VBox alignment="TOP_CENTER" prefHeight="178.0" prefWidth="790.0">
                <children>
-                  <Label text="Nom :" textFill="WHITE">
+                  <Label prefHeight="60.0" prefWidth="337.0" text="Creation Personnage" textFill="#ffba00">
                      <font>
-                        <Font name="Californian FB" size="30.0" />
+                        <Font name="Californian FB" size="40.0" />
                      </font>
                   </Label>
-                  <TextField id="name" promptText="Entrez un nom">
+                  <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-alignment: center; -fx-spacing: 20;">
+                     <children>
+                        <Label text="Nom :" textFill="WHITE">
+                           <font>
+                              <Font name="Californian FB" size="30.0" />
+                           </font>
+                        </Label>
+                        <TextField id="name" fx:id="name" alignment="CENTER" onKeyTyped="#verifTailleNom" prefHeight="34.0" prefWidth="168.0">
+                           <font>
+                              <Font name="Californian FB" size="18.0" />
+                           </font>
+                        </TextField>
+                        <Button id="random" mnemonicParsing="false" onAction="#genererNom" text="Generer">
+                           <font>
+                              <Font name="Californian FB" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Text id="affichage_erreur" fx:id="erreur" fill="#ffa75b" stroke="#ffa85c" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="181.2109375">
                      <font>
-                        <Font name="Californian FB" size="18.0" />
+                        <Font name="Californian FB" size="20.0" />
                      </font>
-                  </TextField>
-                  <Button id="random" onAction="#genererNom" mnemonicParsing="false" text="Generer">
+                  </Text>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="321.0" prefWidth="790.0">
+               <children>
+                  <Button id="end" mnemonicParsing="false" onAction="#creerJeu" prefHeight="40.0" prefWidth="116.0" text="Terminer">
+                     <font>
+                        <Font name="Californian FB" size="21.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="91.0" prefWidth="790.0" style="-fx-alignment: center;">
+               <children>
+                  <Button id="back" mnemonicParsing="false" onAction="#retourMenu" text="Retour au Menu">
                      <font>
                         <Font name="Californian FB" size="18.0" />
                      </font>
                   </Button>
                </children>
-            </HBox>
-            <Button id="end" onAction="#creerJeu" mnemonicParsing="false" text="Terminer">
-               <font>
-                  <Font name="Californian FB" size="18.0" />
-               </font>
-            </Button>
+            </VBox>
          </children>
       </VBox>
    </children>
